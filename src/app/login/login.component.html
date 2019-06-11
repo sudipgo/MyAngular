@@ -1,0 +1,13 @@
+<div class="login-container">
+  <div style="margin-bottom:1em;margin-left: 15em;">
+<label>UserName:</label> 
+<input type="text" id="usrName" [(ngModel)]="this.JobNo" class="job-input" size="small" placeholder="Username" aria-label="Username"  />
+</div>
+<div style="margin-bottom:1em;margin-left: 15em;">
+  <label>PassWord:</label> 
+  <input type="password" id="psw" class="job-input" size="small" placeholder="password" aria-label="password"  />
+</div>
+<div style="margin-bottom:1em;margin-left: 30em;">
+  <button class="btn btn-primary" (click)="session()" [routerLink]="[ '/HartReports',JobNo ]" >Submit</button>
+</div>
+</div>
